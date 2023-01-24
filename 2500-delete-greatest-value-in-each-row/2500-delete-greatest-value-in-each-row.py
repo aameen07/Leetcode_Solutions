@@ -5,7 +5,7 @@ class Solution:
         n = len(grid[0])
         
         res=0
-        for j in range(n):
+        for _ in range(n):
             maxx=0
             for i in range(m):
                 a=max(grid[i])
