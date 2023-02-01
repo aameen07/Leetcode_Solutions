@@ -10,8 +10,11 @@ class Solution:
         
         a = sorted(heights, key = lambda x: -x) #[180, 170, 165]
         
-        for i,j in enumerate(a):
-            a[i] = d[j]
+        for i,j in enumerate(a):    #enumerate gives i,j values where i would be index and j would                                        be the value at that index
+            a[i] = d[j]             
+            
+            #we used enumerate here to save space so we dont have to create another list
         
         return a
         
+        #cheers
