@@ -8,10 +8,10 @@ class Solution:
         
         # {180:Mary, 165 J, 170 E} 
         
-        heights = sorted(heights, key = lambda x: -x) #[180, 170, 165]
+        a = sorted(heights, key = lambda x: -x) #[180, 170, 165]
         
-        for i,j in enumerate(heights):
-            heights[i] = d[j]
+        for i,j in enumerate(a):
+            a[i] = d[j]
         
-        return heights
+        return a
         
