@@ -5,15 +5,16 @@ class Solution:
             return s
         
         arr=[""]*numRows
-        direction="down"
+        direction=False
         row = 0
         for i in s:
             arr[row]+=i
             if row == numRows-1:
-                direction = "up"
+                direction = True
             elif row == 0:
-                direction = "down"
-            if (direction == "down"):
+                direction = False
+            
+            if (direction == False):
                 row+=1
             else:
                 row-=1
