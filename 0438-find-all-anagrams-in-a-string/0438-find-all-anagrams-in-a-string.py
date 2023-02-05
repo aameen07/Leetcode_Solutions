@@ -3,6 +3,7 @@ class Solution:
         
         if len(p)>len(s):
             return []
+        
         a=[0]*26
         res = []
         
