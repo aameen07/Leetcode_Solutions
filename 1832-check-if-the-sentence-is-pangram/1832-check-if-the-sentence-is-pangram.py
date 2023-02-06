@@ -6,7 +6,7 @@ class Solution:
             return False
         
         d=collections.Counter(sentence)
-        # print(d)
+        
         
         if len(d) == 26:
             return True
