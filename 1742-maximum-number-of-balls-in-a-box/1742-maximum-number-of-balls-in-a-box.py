@@ -3,11 +3,10 @@ class Solution:
         
         d=collections.defaultdict(int)
         
-        for n in range(lowLimit,highLimit+1):
+        for i in range(lowLimit,highLimit+1):
             val = 0
-            i=n
             
-            while i:
+            while i>=1:
                 val+=i%10
                 i//=10
             
