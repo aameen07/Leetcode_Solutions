@@ -3,8 +3,8 @@ class Solution:
         if nums[0]>0 or nums[-1]<0:
             return len(nums)
         
-        if len(nums)==1:
-            return 1
+        # if len(nums)==1:
+        #     return 1
         
         if set(nums)=={0}:
             return 0
@@ -20,7 +20,7 @@ class Solution:
             else:
                 l=mid+1 
         pos=len(nums)-r
-        print(pos)
+
         
         l=0
         r=len(nums)-1
