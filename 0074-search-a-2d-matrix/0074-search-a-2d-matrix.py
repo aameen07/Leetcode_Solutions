@@ -3,8 +3,7 @@ class Solution:
         
         row, col = 0, len(matrix[0])-1
 
-        while(row<=len(matrix)-1 and col>=0):
-
+        while(row<len(matrix) and col>=0):
 
             if matrix[row][col] == target:
                 return True
