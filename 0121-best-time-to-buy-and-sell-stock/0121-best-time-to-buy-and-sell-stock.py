@@ -4,7 +4,7 @@ class Solution:
         maxProfit=0
         l=prices[0]
         
-        for i in range(len(prices)):
+        for i in range(1,len(prices)):
             
             if prices[i]<l:
                 l = prices[i]
