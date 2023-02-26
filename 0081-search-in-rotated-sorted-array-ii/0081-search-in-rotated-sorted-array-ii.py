@@ -1,6 +1,8 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> bool:
         
+        #   r=m-1, r=m, l=m+1, return m   ye 4 hi scenerio honge kisi condition ke andr finally 95% questions mei
+        
         l=0
         r=len(nums)-1
         
@@ -10,7 +12,7 @@ class Solution:
             if target == nums[m]:
                 return True
         
-            while l<m and nums[l]==nums[m]:
+            while l!=m and nums[l]==nums[m]:
                 l+=1
             
             if nums[l] <= nums[m]:
