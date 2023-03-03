@@ -1,7 +1,7 @@
 class Solution:
-    # def sortArray(self, nums: List[int]) -> List[int]:
-#         sorted_values=self.merge_sort(nums)
-#         return sorted_values
+    def sortArray(self, nums: List[int]) -> List[int]:
+        sorted_values=self.merge_sort(nums)
+        return sorted_values
     
 #     def merge_sort(self,arr):
         
@@ -38,10 +38,6 @@ class Solution:
 
 # or
         
-    def sortArray(self, nums: List[int]) -> List[int]:
-        sorted_values=self.merge_sort(nums)
-        return sorted_values
-    
     def merge_sort(self,arr):
         
         if len(arr)==1:
@@ -68,5 +64,31 @@ class Solution:
         sorted_array+=right_value[r:]
         
         return sorted_array
+    
+    
+        # def insertion_sort(self,arr):
+    #     for i in range(len(arr)):
+    #         j=i
+    #         while(j>0 and arr[j]<arr[j-1]):
+    #             arr[j],arr[j-1]= arr[j-1],arr[j]
+    #             j-=1
+    #     return arr
+        
+        
+        # or
+        
+        
+#     def bubble_sort(self,arr):
+#         for i in range(len(arr)):
+#             for j in range(0,len(arr)-i-1):
+#                 if arr[j]>arr[j+1]:
+#                     arr[j],arr[j+1] = arr[j+1],arr[j]
+        
+#         return arr
+    
+                
+                
+                
+                
 
         
