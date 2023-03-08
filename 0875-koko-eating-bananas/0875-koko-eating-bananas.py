@@ -19,13 +19,20 @@ class Solution:
 #                 l=m+1
 #         return r
 
-        l, r = 1, max(piles)
-        while l < r:
-            m = (l + r) // 2
-            if sum((p + m - 1) // m for p in piles) > h:
-                l = m + 1
+        l=1
+        r= max(piles)
+        while(l<r):
+            m=(l+r)//2
+            c=0
+            
+            for i in piles:
+                c+=((i-1)//m)+1
+            
+            if c>h:
+                l=m+1
             else:
-                r = m
-        return l
-            
-            
+                r=m
+        
+        return r
+    
+        
