@@ -1,13 +1,5 @@
 class Solution:
     def validPalindrome(self, s: str) -> bool:
-        
-#         for i in s:
-#             s1=s
-#             s1.remove(i)
-#             if s1==s1[::-1]:
-#                 return True
-            
-#         return False
 
         l=0
         r=len(s)-1
