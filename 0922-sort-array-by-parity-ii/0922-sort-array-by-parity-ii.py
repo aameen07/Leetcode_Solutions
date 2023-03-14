@@ -12,7 +12,8 @@ class Solution:
                 j+=2
             else:
                 nums[j],nums[i]=nums[i],nums[j]
-                
+                i+=2
+                j+=2
             
             
         
