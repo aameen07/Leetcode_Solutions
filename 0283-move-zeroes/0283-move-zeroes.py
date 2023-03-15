@@ -18,5 +18,4 @@ class Solution:
                 
         return nums
     
-        # we're using i to catch zeros in the nums and we're using j to catch non zero values and then we just swap them and move ahead. 
-    
+        # we'll use index and try to find non zero values and we put them in index postion then increment index and in the end we just put zeros in the remaining postions.    
