@@ -1,9 +1,14 @@
 class Solution:
-    def strStr(self, s: str, n: str) -> int:
+    def strStr(self, h: str, n: str) -> int:
         
-        for i in range(len(s)-len(n)+1):
-            if s[i:i+len(n)]==n:
-                return i   
-        
+        if h==n:
+            return 0
+        l=0
+        for r in range(len(n)-1,len(h)):
+            if h[l:r+1]==n:
+                return l
+            else:
+                l+=1
         return -1
+        
         
