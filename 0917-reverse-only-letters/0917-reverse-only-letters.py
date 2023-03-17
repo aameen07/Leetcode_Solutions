@@ -15,6 +15,4 @@ class Solution:
                 l+=1
                 r-=1
                 
-        s="".join(nums)
-        
-        return s
+        return "".join(nums)
