@@ -6,8 +6,7 @@ class Solution:
         l=0
         r=k-1
         while(r<len(nums)):
-            if nums[r]-nums[l]<mini:
-                mini=nums[r]-nums[l]
+            mini=min(nums[r]-nums[l],mini)
             # print(mini)
             l+=1
             r+=1
