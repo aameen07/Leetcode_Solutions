@@ -9,6 +9,6 @@ class Solution:
             rem.add(total)
             n=total
         
-        else:
-            return True
+        
+        return True
         
