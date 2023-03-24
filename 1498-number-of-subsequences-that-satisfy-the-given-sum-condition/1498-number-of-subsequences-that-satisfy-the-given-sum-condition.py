@@ -16,7 +16,7 @@ class Solution:
             if nums[l]+nums[r] > target:
                 r-=1
             else:
-                c+=(2**(r-l))%mod
+                c+=pow(2,r-l,mod)
                 l+=1            
         
         return c%mod
