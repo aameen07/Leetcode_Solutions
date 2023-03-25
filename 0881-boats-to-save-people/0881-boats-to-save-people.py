@@ -6,10 +6,11 @@ class Solution:
         r=len(people)-1
         c=0        
         while(l<=r):
-            if people[l]+people[r]<=limit:
-                l+=1
+            if people[l]+people[r]>limit:
+                # l+=1
                 r-=1
             else:
+                l+=1
                 r-=1
             c+=1
         return c
