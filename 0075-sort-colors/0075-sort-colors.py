@@ -4,6 +4,7 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         
+    # this approach is using quick_sort      
         l=0
         r=len(nums)-1
         s_arr = self.quick_sort(nums,l,r)
