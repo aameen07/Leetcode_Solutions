@@ -3,6 +3,9 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
+        # s[:] = s[::-1]
+        
+        # or
         
         l=0
         r=len(s)-1
@@ -14,3 +17,5 @@ class Solution:
             
             l+=1
             r-=1
+            
+            
