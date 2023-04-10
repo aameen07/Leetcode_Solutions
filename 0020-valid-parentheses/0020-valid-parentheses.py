@@ -1,10 +1,23 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+    
+        stack=[]
         
-        while len(s)>0:
-            l=len(s)
-            s=s.replace("()","").replace("{}","").replace("[]","")    
-            print(s)
-            if l==len(s): 
+        if len(s)==1:
+            return False
+        
+        for i in range (len(s)):
+            if s[i]=="(":
+                stack.append(")")
+            elif s[i]=="{":
+                stack.append("}")
+            elif s[i]=="[":
+                stack.append("]")
+            
+            elif not stack or stack.pop() != s[i]:
                 return False
-        return True
+            
+        return not stack
+        
+        
+        
