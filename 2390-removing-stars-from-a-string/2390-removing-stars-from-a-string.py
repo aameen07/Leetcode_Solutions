@@ -1,13 +1,13 @@
 class Solution:
     def removeStars(self, s: str) -> str:
         i=0
-        a=""
+        a=[]
         while(i<len(s)):
             if s[i]!="*":
-                a+=(s[i])
+                a.append(s[i])
             else:
-                a=a[:-1]
+                a.pop()
             i+=1
             
-        return a
+        return "".join(a)
         
