@@ -1,14 +1,36 @@
 class Solution:
     def validateStackSequences(self, pushed: List[int], popped: List[int]) -> bool:
         
-        stack=[]        #1234
-        j=0
-        for i in pushed:
-            stack.append(i)
-            while stack and stack[-1]==popped[j]:
-                stack.pop()
-                j+=1
+#         stack=[]       
+#         j=0
+#         for i in pushed:
+#             stack.append(i)
+#             while stack and stack[-1]==popped[j]:
+#                 stack.pop()
+#                 j+=1
             
-        return stack==[]
-                
+#         return stack==[]
+        
+        i=0
+        j=0
+        for x in pushed:
+            pushed[i]=x
+            while i>=0 and pushed[i]==popped[j]:
+                i-=1
+                j+=1
+            i+=1
+        return i==0
+
+#         while i<len(pushed):
+#             print(i,j)
+#             if pushed[i]==popped[j]:
+#                 pushed.remove(pushed[i])
+#                 i-=1
+#                 j+=1
+#             else:
+#                 i+=1
+        
+#         return pushed==[]
+    
+    
         
