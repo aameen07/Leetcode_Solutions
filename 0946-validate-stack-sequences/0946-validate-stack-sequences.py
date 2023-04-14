@@ -20,17 +20,5 @@ class Solution:
                 j+=1
             i+=1
         return i==0
-
-#         while i<len(pushed):
-#             print(i,j)
-#             if pushed[i]==popped[j]:
-#                 pushed.remove(pushed[i])
-#                 i-=1
-#                 j+=1
-#             else:
-#                 i+=1
         
-#         return pushed==[]
-    
-    
         
