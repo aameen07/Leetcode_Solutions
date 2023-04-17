@@ -1,5 +1,6 @@
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        
         l1=[]
         for i in range(len(candies)):
             total = candies[i]+extraCandies
