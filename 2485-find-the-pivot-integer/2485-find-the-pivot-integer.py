@@ -2,16 +2,16 @@ class Solution:
     def pivotInteger(self, n: int) -> int:
         
         asum=n*(n+1)//2
-        # print(asum)
         bsum=0
         for i in range(1,n+1):
             bsum+=i
             if asum==bsum:
                 return i
+            elif bsum>asum:
+                return -1
             else:
                 asum-=i
         
-        return -1
     
     
 #         rsum=sum([i for i in range(1,n+1)])
