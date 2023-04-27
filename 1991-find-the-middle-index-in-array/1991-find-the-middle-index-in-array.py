@@ -4,12 +4,12 @@ class Solution:
         lsum=0
         rsum=sum(nums)
         
-        for i in range(len(nums)):
+        for i,val in enumerate(nums):
             
-            rsum-=nums[i]
+            rsum-=val
             if lsum==rsum:
                 return i
-            lsum+=nums[i] 
+            lsum+=val 
         
         return -1
                 
