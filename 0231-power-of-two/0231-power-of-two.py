@@ -1,13 +1,14 @@
 class Solution:
     def isPowerOfTwo(self, n: int) -> bool:
         
-#         if n==1:
-#             return True
-#         elif n%2==1 or n==0:
-#             return False
+        if n==1:
+            return True
+        elif n%2==1 or n==0:
+            return False
         
-#         return self.isPowerOfTwo(n//2)
-
+        return self.isPowerOfTwo(n/2)
+    
+        # print(1.0%2==1)
 # or
 
 
@@ -15,10 +16,10 @@ class Solution:
         
         
         # or
-        if n>0:
-            a=bin(n).count('1')
-            if a == 1:
-                return True
-        return False
+        # if n>0:
+        #     a=bin(n).count('1')
+        #     if a == 1:
+        #         return True
+        # return False
         
         
