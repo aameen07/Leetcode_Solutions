@@ -7,8 +7,18 @@ class Solution:
 #             return False
         
 #         return self.isPowerOfTwo(n//2)
+
+# or
+
+
+        # return (n>0) and (n & n-1)==0
         
-        return (n>0) and (n & n-1)==0
         
+        # or
+        if n>0:
+            a=bin(n).count('1')
+            if a == 1:
+                return True
+        return False
         
         
