@@ -16,7 +16,7 @@ class Solution:
     
             d[psum]=d.get(psum,0)+1
             
-        print(d)
+        
         return count
         
         
