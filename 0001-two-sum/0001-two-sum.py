@@ -16,3 +16,6 @@ class Solution:
             d[nums[i]]=i
         
         
+        
+        
+        
