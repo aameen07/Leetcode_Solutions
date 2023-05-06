@@ -12,8 +12,8 @@ class Solution:
                 # c+=(2**(r-l))%mod
                 l+=1
             else:
-                r-=1
-                
-        return c%mod
-    
+                r-=1               
+        
+        return c % mod
+        
     
