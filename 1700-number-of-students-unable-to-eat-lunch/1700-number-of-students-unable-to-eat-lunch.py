@@ -12,12 +12,25 @@ class Solution:
         
         # or
         
-        for i,sand in enumerate(sandwiches):
-            if sand in students:
-                students.remove(sand)
-                # print(students)
-            else:
-                return len(sandwiches)-i
+#         for i,sand in enumerate(sandwiches):
+#             if sand in students:
+#                 students.remove(sand)
+#             else:
+#                 return len(sandwiches)-i
                 
-        return 0
+#         return 0
+        
+    
+    # or
+    
+    
+        while students:
+            if sandwiches[0] in students:
+                students.remove(sandwiches[0])
+                sandwiches.pop(0)
+            else:
+                break
+        
+        return len(sandwiches)
+        
         
