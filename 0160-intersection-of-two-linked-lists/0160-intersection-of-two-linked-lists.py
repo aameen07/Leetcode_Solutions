@@ -10,8 +10,14 @@ class Solution:
         a,b=headA,headB
         
         while a!=b:
+            if not a:
+                a=headB
+            else:
+                a=a.next
             
-            a=headB if not a else a.next
-            b=headA if not b else b.next
+            if not b:
+                b=headA
+            else:
+                b=b.next
         
         return a
