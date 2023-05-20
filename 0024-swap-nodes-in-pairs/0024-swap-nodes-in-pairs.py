@@ -13,11 +13,13 @@ class Solution:
             
             temp1=curr.next
             temp2=curr.next.next
-            curr.next=temp2
-            temp1.next=temp2.next
-            temp2.next=temp1
+            curr.next,temp2.next,temp1.next=temp2,temp1,temp2.next
+            
+            # curr.next=temp2
+            # temp1.next=temp2.next
+            # temp2.next=temp1
 
-# we're basically swapping and the main part is when we do temp1.next =temp2.next and we do it before we change temp2.next and this would not be a problem though in python the universal ans would be like this 
+# we're basically swapping and the main part is when we do temp1.next = temp2.next and we do it before we change temp2.next and this would not be a problem though in python the universal ans would be like this 
 
             curr=temp1
         
