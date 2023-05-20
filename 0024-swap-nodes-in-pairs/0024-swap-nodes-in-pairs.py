@@ -6,9 +6,6 @@
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
         
-        if head is None:
-            return None
-        
         dummy=ListNode(0,head)
         curr=dummy
         
