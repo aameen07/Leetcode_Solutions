@@ -16,7 +16,9 @@ class Solution:
             curr.next=temp2
             temp1.next=temp2.next
             temp2.next=temp1
-            
+
+# we're basically swapping and the main part is when we do temp1.next =temp2.next and we do it before we change temp2.next and this would not be a problem though in python the universal ans would be like this 
+
             curr=temp1
         
         return dummy.next
