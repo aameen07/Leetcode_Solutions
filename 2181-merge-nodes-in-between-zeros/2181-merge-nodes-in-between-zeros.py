@@ -6,7 +6,24 @@
 class Solution:
     def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
         
-        curr=head
+#         curr=head
+#         nxt=head.next
+#         s=0
+        
+#         while nxt:    
+#             if nxt.val!=0:
+#                 s+=nxt.val
+#             else:
+#                 curr=curr.next
+#                 curr.val=s
+#                 s=0
+#             nxt=nxt.next
+        
+#         curr.next=None
+#         return head.next
+
+        
+        dummy=ListNode(next=head)
         nxt=head.next
         s=0
         
@@ -14,10 +31,11 @@ class Solution:
             if nxt.val!=0:
                 s+=nxt.val
             else:
-                curr=curr.next
-                curr.val=s
+                dummy=dummy.next
+                dummy.val=s
                 s=0
             nxt=nxt.next
         
-        curr.next=None
-        return head.next
+        dummy.next=None
+        return head
+        
