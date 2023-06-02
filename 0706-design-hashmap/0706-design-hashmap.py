@@ -4,57 +4,52 @@ class ListNode:
         self.next=None
     
 class MyHashMap:
-
     def __init__(self):
         self.size=1000
         self.a=[None]*self.size
-
+        
     def put(self, key: int, value: int) -> None:
-        h=key%self.size
-        if self.a[h]==None:
-            self.a[h]=ListNode(key,value)
+        index=key%self.size
+        if self.a[index]==None:
+            self.a[index]=ListNode(key,value)
         else:
             pre=None
-            cur=self.a[h]
+            cur=self.a[index]
             while (cur!=None):
                 if cur.pair[0]==key:
                     cur.pair=(key,value)
                     return 
                 pre=cur
                 cur=cur.next
-            
             pre.next=ListNode(key,value)
-            
 
     def get(self, key: int) -> int:
-        h=key%self.size
-        if self.a[h]==None: return -1
+        index=key%self.size
+        if self.a[index]==None: return -1
         
-        cur=self.a[h]
+        cur=self.a[index]
         while (cur!=None):
             if cur.pair[0]==key:
                 return cur.pair[1]
             cur=cur.next
         
-        return -1
-                
+        return -1                
 
     def remove(self, key: int) -> None:
-        h=key%self.size
-        if self.a[h]==None: return 
+        index=key%self.size
+        if self.a[index]==None: return 
         
-        
-        curr=self.a[h]
-        if curr.pair[0]==key:
-            self.a[h]=curr.next
+        current=self.a[index]
+        if current.pair[0]==key:
+            self.a[index]=current.next
             return
         
         pre=None
-        cur=self.a[h]
+        cur=self.a[index]
         while (cur!=None):
             if cur.pair[0]==key:
                 pre.next=cur.next
-                return 
+                return
             pre=cur
             cur=cur.next
         return 
