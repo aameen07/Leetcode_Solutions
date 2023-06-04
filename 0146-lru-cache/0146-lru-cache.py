@@ -1,4 +1,4 @@
-class Node:
+class Node:         # this class is for creating new Node
     def __init__(self,key,value):
         self.key,self.val=key,value
         self.prev=self.next=None
@@ -6,34 +6,34 @@ class Node:
 class LRUCache:
     def __init__(self, capacity: int):
         self.cap=capacity
-        self.cache={}
+        self.d={}
         self.head=Node(0,0)
         self.tail=Node(0,0)
         self.head.next=self.tail
         self.tail.prev=self.head
         
     def get(self, key: int) -> int:
-        if key in self.cache:
-            n=self.cache[key]
-            self.remove(self.cache[key])
+        if key in self.d:
+            n=self.d[key]
+            self.remove(self.d[key])
             self.insert(n)
             return n.val
         return -1
             
     def put(self, key: int, value: int) -> None:
-        if key in self.cache:
-            self.remove(self.cache[key])
-        elif len(self.cache) == self.cap:
+        if key in self.d:
+            self.remove(self.d[key])
+        elif len(self.d) == self.cap:
             self.remove(self.tail.prev)
         self.insert(Node(key,value))
         
     def remove(self,node):
         node.prev.next=node.next
         node.next.prev=node.prev
-        del self.cache[node.key]     #we're deleting the entry from dic by taking key from the node
+        del self.d[node.key]     #we're deleting the entry from dic by taking key from the node
         
     def insert(self,node):
-        self.cache[node.key]=node
+        self.d[node.key]=node
         right=self.head.next
         left=self.head
         
