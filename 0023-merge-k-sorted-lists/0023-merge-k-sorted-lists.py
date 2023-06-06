@@ -11,18 +11,16 @@ class Solution:
         if len(lists)==1:
             return lists[0]
         
-        while len(lists)>1:
-            ansList=[]
-            for i in range(0,len(lists),2):
-                a=lists[i]
-                if i+1<len(lists):
-                    b=lists[i+1]
-                else:
-                    b=None
-                c=self.merge(a,b)
-                ansList.append(c)
-            lists=ansList
-        return lists[0]
+        ans=[]
+        for i in range(0,len(lists),2):
+            a=lists[i]
+            if i+1<len(lists):
+                b=lists[i+1]
+            else:
+                b=None
+            c=self.merge(a,b)
+            ans.append(c)
+        return self.mergeKLists(ans)
         
     def merge(self,l1,l2):
         res=ListNode()
