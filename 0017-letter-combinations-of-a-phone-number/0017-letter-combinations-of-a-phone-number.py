@@ -17,7 +17,7 @@ class Solution:
         return res
         
     def dfs(self,nums,index,dic,path,res):
-        if index>=len(nums):
+        if index==len(nums):
             res.append(path)
             return
         
