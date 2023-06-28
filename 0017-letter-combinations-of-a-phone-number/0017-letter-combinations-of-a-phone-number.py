@@ -8,22 +8,20 @@ class Solution:
                "7":"pqrs", 
                "8":"tuv", 
                "9":"wxyz"}
-        
+
         res=[]
         if len(nums)==0:
             return res
-        
+
         self.dfs(nums,0,dic,"",res)
         return res
-        
+
     def dfs(self,nums,index,dic,path,res):
         if index==len(nums):
             res.append(path)
             return
-        
+
         string=dic[nums[index]]
-        
+
         for i in string:
-            self.dfs(nums,index+1,dic,path+i,res)    
-            
-        
+            self.dfs(nums,index+1,dic,path+i,res)
