@@ -8,6 +8,7 @@ class Solution:
                "7":"pqrs", 
                "8":"tuv", 
                "9":"wxyz"}
+        
         res=[]
         if len(nums)==0:
             return res
@@ -16,7 +17,7 @@ class Solution:
         return res
         
     def dfs(self,nums,index,dic,path,res):
-        if index==len(nums):
+        if index>=len(nums):
             res.append(path)
             return
         
