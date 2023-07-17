@@ -25,8 +25,7 @@ class Solution(object):
             v1=v2=0
             if s1: v1=s1.pop()
             if s2: v2=s2.pop()
-            carry,value=divmod(v1+v2+carry,10)
-            
+            carry,value=divmod(v1+v2+carry,10)            
             dummy=ListNode(value,dummy)
         
         return dummy
