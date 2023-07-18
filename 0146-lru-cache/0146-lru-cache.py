@@ -17,15 +17,15 @@ class LRUCache:
             n=self.d[key]
             self.remove(self.d[key])
             self.insert(n)
-            return n.val
-        return -1
+            return n.val        #we return value of the Node
+        return -1               
             
     def put(self, key: int, value: int) -> None:
         if key in self.d:
-            self.remove(self.d[key])
+            self.remove(self.d[key])            #we remove the Node and entry from the dic
         elif len(self.d) == self.cap:
-            self.remove(self.tail.prev)
-        self.insert(Node(key,value))
+            self.remove(self.tail.prev)         
+        self.insert(Node(key,value))            #we insert entry in dic and the node
         
     def remove(self,node):
         node.prev.next=node.next
