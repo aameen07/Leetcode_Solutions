@@ -1,5 +1,5 @@
 class Solution:
-    def plusOne(self, digits: List[int]) -> List[int]:
+    def plusOne(self, d: List[int]) -> List[int]:
         
         # if d[-1] != 9:
         #     d[-1]+=1
@@ -14,7 +14,7 @@ class Solution:
         # or
         
         b=""
-        for i in digits:
+        for i in d:
             b+=str(i)
         b=str(int(b)+1)
         c=[int(j) for j in b]
