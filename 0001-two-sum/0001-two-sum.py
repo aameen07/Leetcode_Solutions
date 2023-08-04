@@ -12,7 +12,6 @@ class Solution:
         for i in range(len(nums)):
             if target - nums[i] in d:                   #O(n)
                 return [d[target - nums[i]],i]
-            
             d[nums[i]]=i
         
         
