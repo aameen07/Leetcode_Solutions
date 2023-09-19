@@ -5,7 +5,6 @@ class Solution:
             # print(nums)
             if nums[abs(i)] < 0:
                 return abs(i)
-            
             else:
                 nums[abs(i)]*=-1
         
