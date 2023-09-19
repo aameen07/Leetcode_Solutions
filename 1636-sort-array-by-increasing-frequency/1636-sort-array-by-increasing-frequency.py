@@ -7,9 +7,5 @@ class Solution:
             else:
                 d[i]+=1
         
-        a= sorted(nums, key = lambda x : (d[x],-x))
-        
-        
-        return a
-        
-        
+        nums.sort(key = lambda x : (d[x],-x))
+        return nums
