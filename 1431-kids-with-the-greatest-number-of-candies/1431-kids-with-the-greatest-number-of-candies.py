@@ -7,3 +7,5 @@ class Solution:
             l1.append(total >= max(candies))
             
         return l1
+    
+    
