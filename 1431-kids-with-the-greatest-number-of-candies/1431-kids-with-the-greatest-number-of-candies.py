@@ -5,7 +5,5 @@ class Solution:
         for i in range(len(candies)):
             total = candies[i]+extraCandies
             l1.append(total >= max(candies))
-            
+        
         return l1
-    
-    
