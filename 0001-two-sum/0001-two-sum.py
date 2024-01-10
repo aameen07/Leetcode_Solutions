@@ -13,4 +13,4 @@ class Solution:
             if target - nums[i] in d:                   #O(n)
                 return [d[target - nums[i]],i]
             d[nums[i]]=i
-    
+     
