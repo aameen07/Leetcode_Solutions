@@ -1,11 +1,15 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
+
+        count=0
         
-        i=0
+        for char in t:
+            if count<len(s) and s[count]==char:
+                count+=1
         
-        for j in t:
-            if i<len(s) and  s[i]==j:
-                i+=1
-            
-        return len(s)==i
+        return len(s)==count
+    
+# This checks if the 
+
+
         
