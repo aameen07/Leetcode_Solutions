@@ -15,3 +15,5 @@ class Solution:
             d[nums[i]]=i
 
 # hum dic banaenge jaise jaise aage iterate krenge nums mei and hum check krenge target mei se abhi ka element subtract krke ke jo res aega wo hai kya dic mei and ni hoga to abhi wale element ko key bana kr uska index value pr dal denge and aage check krenge until we find the target.
+
+
