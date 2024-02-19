@@ -1,16 +1,16 @@
 class Solution:
     def numUniqueEmails(self, nums: List[str]) -> int:
-        d=set()
+        l=set()
         for i in nums:
             full=i.split("@")
-            last=full[-1]
-            front=full[0]
-            front=front.split("+")
-            front=front[0]
-            front=front.replace(".","")
-            full=front + "@" +last
-            d.add(full)
-        return (len(d))
+            domain=full[-1]
+            local=full[0]
+            local=local.split("+")
+            local=local[0]
+            local=local.replace(".","")
+            full=local + "@" + domain
+            
+            l.add(full)
         
-        
+        return (len(l))
         
