@@ -14,11 +14,8 @@ class Solution:
             if cur in dic:
                 stack.append(cur)
         
-        return res
+        return res        
             
-            
-        
-        
         
         # or
         
@@ -31,9 +28,3 @@ class Solution:
 #             res.append(i)
         
 #         return [dic.get(j,-1) for j in nums1]
-    
-    # or
-    
-        
-        
-        
