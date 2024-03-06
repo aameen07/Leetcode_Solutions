@@ -2,18 +2,18 @@ class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         
         total=sum(nums)
-        lsum=rsum=0
-        pivotIndex=0
+        lsum=0
         
         for i in range(len(nums)):
 
-            rsum=total-nums[pivotIndex]-lsum
+            rsum=total-nums[i]-lsum
             print(lsum,rsum)
             if lsum == rsum:        
                 return i
             
-            lsum+=nums[pivotIndex]
-            pivotIndex+=1
+            lsum+=nums[i]
+            
         
         return -1
+        
         
