@@ -3,18 +3,17 @@ class Solution:
         
         p=list(pattern)
         s=s.split()
-        print(p)
-        print(s)
-        
         d={}
         
-        if len(p)!=len(s): return False
-        if len(set(p))!=len(set(s)): return False
+        if len(s)!=len(p): return False
+        if len(set(s))!=len(set(p)): return False
         
-        for i, val in enumerate(p):
+        for i , val in enumerate(p):
             if val in d and d[val]!=s[i]:
                 return False
             else:
                 d[val]=s[i]
-        
+                
         return True
+
+        
