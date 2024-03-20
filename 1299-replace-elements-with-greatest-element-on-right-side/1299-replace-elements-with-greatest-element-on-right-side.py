@@ -14,4 +14,4 @@ class Solution:
             
         return arr        
 
-# humei 
+# hum arr ke end se iterate krte hue aenge and max pta lagate jaenge wahan se and jo unka max hai hr ek point pr usko us index ke element se compare krenge for getting max value
