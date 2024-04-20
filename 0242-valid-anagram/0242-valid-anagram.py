@@ -18,4 +18,4 @@ class Solution:
         return True
     
     
-# 
+# we get the count of one string and subtract the count of the other string from the same dictionary and then we check if that dic count, if there is a count then its not an anagram otherwise it is.
