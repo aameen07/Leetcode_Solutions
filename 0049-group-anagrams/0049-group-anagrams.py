@@ -1,17 +1,16 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         
-        dic={}
+        d={}
         
         for i in strs:
-            sorted_str = "".join(sorted(i))
             
-            if sorted_str not in dic:
-                dic[sorted_str] = []
+            sorted_string = "".join(sorted(i))
             
-            dic[sorted_str].append(i)
+            if sorted_string not in d:
+                d[sorted_string] = []
             
-        return list(dic.values())
-    
-
-# We simply used the idea of sorted string this helped in finding the commonality in the anagrams. Then we simply stacked them under that sorted string key in a list and in the end returned all the values together in list format. 
+            d[sorted_string].append(i)
+        
+        return (d.values())
+        
