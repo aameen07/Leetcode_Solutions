@@ -2,12 +2,12 @@ class Solution:
     def isPalindrome(self, s: str) -> bool:
         
         s=s.lower()
-        new_s = ""
+        num_s=""
         for i in s:
             if i.isalnum():
-                new_s+=i
+                num_s+=i
         
-        return new_s==new_s[::-1]
+        return num_s==num_s[::-1]
         
         # or 
         
@@ -32,6 +32,3 @@ class Solution:
             # or
     
     # return [char for char in s.lower() if char.isalnum()] == [char for char in s[::-1].lower() if char.isalnum()]
-    
-    
-    
