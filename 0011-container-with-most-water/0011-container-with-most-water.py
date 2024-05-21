@@ -3,10 +3,10 @@ class Solution:
         
         l=0
         r=len(height)-1
-        area=float('-inf')
         
-        while(l<r):
-            
+        area=float("-inf")
+        
+        while l<r:
             b=r-l
             h=min(height[l],height[r])
             area=max(area,h*b)
@@ -17,3 +17,5 @@ class Solution:
                 r-=1
         
         return area
+        
+# 
