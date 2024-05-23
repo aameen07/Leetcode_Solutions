@@ -12,7 +12,7 @@ class Solution:
                 continue
             else:
                 maxProfit=max(maxProfit,prices[r]-l)
-                print(maxProfit)
+                # print(maxProfit)
         
         return maxProfit
         
