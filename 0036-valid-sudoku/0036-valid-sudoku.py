@@ -19,6 +19,6 @@ class Solution:
                 squares[(r//3,c//3)].add(board[r][c])
                 
         return True
-    
-    
+
+
 # We make Dictionary of row number as keys and the value as the set of the values which are there in that row now after that we do the same for columns and then we do the same for squares. We check if the element has already been in that row or column or in that square(for square we use r//3,c//3 to get which sqaure it is) and then if its not there we add it and the end since there are no mistakes we give True that its a vald Sudoku.
