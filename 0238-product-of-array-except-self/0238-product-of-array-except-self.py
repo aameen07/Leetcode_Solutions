@@ -15,3 +15,5 @@ class Solution:
             
         return res
         
+        
+# We simply first entered the prefix multiplicated values in the result array from the second postion then we took the postfix multiplicated values and multiplied them with the result array values from the end postion going backwards this gave us the result array which we needed according to the question.
